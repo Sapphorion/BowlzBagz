@@ -1,5 +1,5 @@
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: rgb(252, 152, 21); /* Orange */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -10,4 +10,227 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+    font-family:sans-serif;
+}
+body {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 166, 0, 0.507);
+    font-family: sans-serif;
+}
+.navigation {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.navigation a {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 14px 28px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(252, 152, 21);
+    border-radius: 10px;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+    font-family:sans-serif;
+}
+.navigation a:hover {
+    background-color: rgb(232, 132, 1);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+.navigation a:focus {
+    outline: 3px solid rgba(255,166,0,0.3);
+    outline-offset: 2px;
+}
+
+main {
+    background-color: #ffffff; /* White */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(252, 152, 21); /* Orange border */
+    border-radius: 10px;
+}
+.img{ 
+    border: 5px solid rgb(252, 152, 21); /* Orange border */
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* Moved from main.html: gallery, contact, about styles */
+.gallery {
+    text-align: center;
+    margin: 50px 0;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.gallery-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.gallery-container img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.order-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.order-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+.contact-links a:hover {
+    text-decoration: underline;
+}
+.about {
+    text-align: center;
+    margin: 50px 0;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.contact h2 {
+    margin-bottom: 20px;
+}
+.contact p {
+    margin-bottom: 20px;
+}
+.contact-links a {
+    font-size: 20px;
+}
+.contact-links a:hover {
+    color: #ff6600;
+}
+
+/* From order.html — scoped to .order-page */
+.order-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.order-page {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 166, 0, 0.507); /* Match main page background */
+    padding: 20px;
+} 
+.order-page .header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.order-page .header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.order-page .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.order-page .product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+} 
+.order-page .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.order-page .product-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+    transition: max-height 0.4s ease, box-shadow 0.25s ease;
+}
+.order-page .product-image.no-crop {
+    object-fit: contain;
+    max-height: 250px;
+}
+/* Hover: expand no-crop images to reveal full image height */
+.order-page .product-card:hover .product-image.no-crop {
+    max-height: 80vh; /* grow to near-viewport height */
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+.order-page .product-info {
+    padding: 20px;
+}
+.order-page .product-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.order-page .product-description {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+.order-page .product-price {
+    font-size: 1.5em;
+    color: #2ecc71;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.order-page .order-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(252, 152, 21); /* Match site orange */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.order-page .order-btn:hover {
+    background-color: rgb(232, 132, 1);
+    transform: translateY(-2px);
 }
