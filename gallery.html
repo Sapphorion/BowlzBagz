@@ -3,70 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BowlzBagz - Product Gallery</title>
+    <title>BowlzBagz — Product Gallery</title>
+    <meta name="description" content="The full BowlzBagz range of locally made lawn bowls bags — from single-pair carriers to fully lined trolley bags.">
     <link rel="stylesheet" href="styling.css">
 </head>
-<body class="order-page">
-    <div class="header">
-        <img src="images/BowlzBagz_Logo_New-removebg-preview.png" alt="BowlzBagz Logo" style="display: block; margin: 20px auto; width: 300px; max-width: 90%;">
-      
-        <nav class="navigation">
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-</nav>
-    </div>
-    
-    <div class="gallery">
+<body>
 
-        <div class="product-card">
-            <img src="images/IMG_0090.JPG" alt="Small Bowls Bag" class="product-image">
-            <div class="product-info">
-                <div class="product-name">Small Bowls Bag</div>
-                <div class="product-description">Small bowls bag with single compartments. 
-                    Perfect for travelling with 2 bowls and accessories. 
-                    Made from canvas and can be used as compartments in all larger bags.</div>
-                <div class="product-price"> R300 / pair </div>
-                <a class="order-btn" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order Now</a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <img src="images/IMG_0119.JPG" alt="Tote Bag" class="product-image">
-            <div class="product-info">
-                <div class="product-name">Canvas Tote Bowls Bag</div>
-                <div class="product-description">Canvas tote bag with two compartments for bowls and accessories.
-                    Easy for packing at the back of the car, carrying on the green or during a tournament.
-                </div>
-                <div class="product-price">R600</div>
-                <a class="order-btn" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order Now</a>
-            </div>
-        </div>
-        
-        <div class="product-card">
-            <img src="images/IMG_0080.JPG" alt="Large Carrier Bag" class="product-image">
-            <div class="product-info">
-                <div class="product-name">Large Carrier Tog Bag</div>
-                <div class="product-description">Large carrier tog bag with two compartments for bowls and accessories.
-                    Perfect for club players who need to carry multiple bowls and gear. Plenty of storage for out of town games and bowls all in one bag.
-                </div>
-                <div class="product-price"> R950</div>
-                <a class="order-btn" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order Now</a>
-            </div>
-        </div>
-        <div class="product-card">
-            <img src="images/IMG_0097.JPG" alt="Large Trolley Bag" class="product-image no-crop">
-            <div class="product-info">
-                <div class="product-name">Large Trolley Bag</div>
-                <div class="product-description">Large trolley bag with a fully lined interior and multiple compartments for bowls and accessories.
-                    Can easily fit 4 bowls and all your gear. Strong wheels and retractable handle for easy transport to the green. Inner straps for securing bowls in place.
-                </div>
-                <div class="product-price"> R1450 </div>
-                <a class="order-btn" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order Now</a>
-            </div>
-        </div>
-        <p> All bag varients available in Green, Red, Pink, Purple and Blue.</p>
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="brand" href="index.html">
+            <img src="images/BowlzBagz_Logo_New-removebg-preview.png" alt="BowlzBagz">
+        </a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="is-active">Gallery</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
     </div>
-    
-    
+</header>
+
+<section class="section">
+    <div class="wrap">
+        <div class="section-head">
+            <span class="eyebrow">The range</span>
+            <h2>Bowls bags for every kind of player</h2>
+            <p>Every bag is made to order and customised to your requirements. Prices include your choice of colour.</p>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+                <div class="product-media">
+                    <img src="images/IMG_0090.JPG" alt="Small bowls bag with single compartments">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Small Bowls Bag</h3>
+                    <p class="product-description">
+                        Small bowls bag with single compartments. Perfect for travelling with
+                        2 bowls and accessories. Made from canvas, and doubles as a compartment
+                        inside any of our larger bags.
+                    </p>
+                    <div class="product-price">R300 <span class="unit">/ pair</span></div>
+                    <a class="btn btn--primary btn--block" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order now</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-media">
+                    <img src="images/IMG_0119.JPG" alt="Canvas tote bowls bag with two compartments">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Canvas Tote Bowls Bag</h3>
+                    <p class="product-description">
+                        Canvas tote bag with two compartments for bowls and accessories. Easy to
+                        pack in the back of the car and simple to carry on the green or through
+                        a tournament.
+                    </p>
+                    <div class="product-price">R600</div>
+                    <a class="btn btn--primary btn--block" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order now</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-media">
+                    <img src="images/IMG_0080.JPG" alt="Large carrier tog bag with two compartments">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Large Carrier Tog Bag</h3>
+                    <p class="product-description">
+                        Large carrier tog bag with two compartments for bowls and accessories.
+                        Built for club players carrying multiple bowls and gear — plenty of
+                        storage for out-of-town games, bowls and kit all in one bag.
+                    </p>
+                    <div class="product-price">R950</div>
+                    <a class="btn btn--primary btn--block" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order now</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-media product-media--contain">
+                    <img src="images/IMG_0097.JPG" alt="Large trolley bag with wheels and retractable handle">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Large Trolley Bag</h3>
+                    <p class="product-description">
+                        Large trolley bag with a fully lined interior and multiple compartments.
+                        Fits 4 bowls and all your gear, with strong wheels, a retractable handle
+                        and inner straps to secure your bowls in place.
+                    </p>
+                    <div class="product-price">R1 450</div>
+                    <a class="btn btn--primary btn--block" href="https://forms.gle/n9ytMJtcjeyoNzmn8" target="_blank" rel="noopener noreferrer">Order now</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="note">
+            All bag variants available in Green, Red, Pink, Purple and Blue.
+            <span class="colour-dots" aria-hidden="true">
+                <span style="background:#1f7a3d"></span>
+                <span style="background:#c62828"></span>
+                <span style="background:#e91e8c"></span>
+                <span style="background:#7b3fb5"></span>
+                <span style="background:#1565c0"></span>
+            </span>
+        </p>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="wrap">
+        <h2>Need something custom?</h2>
+        <p>We build to your specifications. Tell us what you need and we'll quote you.</p>
+        <a class="btn btn--primary" href="https://wa.me/+27842898784" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap site-footer__inner">
+        <span>&copy; BowlzBagz — Made in South Africa</span>
+        <span>
+            <a href="mailto:bowlzbagz@gmail.com">bowlzbagz@gmail.com</a>
+            &nbsp;·&nbsp;
+            <a href="https://wa.me/+27842898784" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </span>
+    </div>
+</footer>
+
 </body>
 </html>

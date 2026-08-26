@@ -3,74 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BowlzBagz</title>
+    <title>BowlzBagz — Handmade Lawn Bowls Bags, Made in South Africa</title>
+    <meta name="description" content="Durable, locally made lawn bowls bags at honest South African prices. Custom made to your requirements, with delivery nationwide.">
     <link rel="stylesheet" href="styling.css">
 </head>
-<img src="images/BowlzBagz_Logo_New-removebg-preview.png" alt="BowlzBagz Logo" style="display: block; margin: 20px auto; width: 300px; max-width: 90%;">
 <body>
-<nav class="navigation">
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-</nav>
-<!-- Pop-up Modal -->
+
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="brand" href="index.html">
+            <img src="images/BowlzBagz_Logo_New-removebg-preview.png" alt="BowlzBagz">
+        </a>
+        <nav class="navigation">
+            <a href="index.html" class="is-active">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Promo pop-up — disabled. To re-enable, uncomment showPopup() at the
+     bottom of this page and swap in the current promotion image. -->
 <div id="popup" class="popup-overlay hidden">
     <div class="popup-box">
-        <button class="popup-close">&times;</button>
+        <button class="popup-close" aria-label="Close">&times;</button>
         <h2>April Promotion</h2>
-        <img src="images/1-29144634.jpg" alt="April Promotion" style="width: 100%; height: auto; margin-bottom: 15px;">
+        <img src="images/1-29144634.jpg" alt="April Promotion">
     </div>
 </div>
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Us</h2>
-        <p>At Bowlz Bagz, we believe that every player deserves high-quality gear without having to pay a premium price.
-            Based right here in South Africa, we've cut the middleman and the expensive import costs to bring you durable, reliable bowls bags that are built to last.
-            Because we design and manufacture our products locally, we can offer exceptional value and quality. This means we aren't just saving you money
-            we are supporting local craftsmen and ensure that every stitch meets our standards.
-            Whether you are a seasoned pro or just starting out, BowlzBagz has the perfect bag for your needs.
-            Our mission is simple: to provide fellow South African bowlers with hardworking gear at an honest and affordable price. 
-            We customize each bag according to your specific requirements. Delivery across South Africa is available.</p>
-    </section>
-    <!-- Styles moved to styling.css -->
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Get In Touch</h2>
-        <p>We'd love to hear from you! Connect with us through your preferred channel:</p>
-        <div class="contact-links">
-            <a href="mailto:bowlzbagz@gmail.com" target="_blank">📧 Email</a>
-            <a href="https://wa.me/+27842898784" target="_blank">💬 WhatsApp</a>
-            <a href="https://www.facebook.com/groups/963070630904845/user/61566341114636/" target="_blank">👍 Facebook</a>
-            <a href="https://www.instagram.com/bowlzbagz/" target="_blank">📸 Instagram</a>
+<!-- Hero -->
+<section class="hero">
+    <div class="wrap hero__grid">
+        <div>
+            <span class="eyebrow">Proudly made in South Africa</span>
+            <h1>Bowls bags built to <em>last</em>, priced to be fair.</h1>
+            <p class="lead">
+                We design and manufacture every bag locally — no middleman, no import
+                mark-up. Just hardworking gear for South African bowlers, custom made
+                to your requirements and delivered nationwide.
+            </p>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="gallery.html">Shop the range</a>
+                <a class="btn btn--ghost" href="#contact">Get in touch</a>
+            </div>
         </div>
-    </section>
- 
+        <div class="hero__media">
+            <img src="images/IMG_0080.JPG"
+                 alt="Red and black BowlzBagz carrier tog bag with twin compartments">
+        </div>
+    </div>
+</section>
+
+<!-- Why us -->
+<section class="section">
+    <div class="wrap">
+        <div class="features">
+            <div class="feature">
+                <div class="feature__icon" aria-hidden="true">🇿🇦</div>
+                <h3>Locally made</h3>
+                <p>Manufactured here in South Africa by local craftsmen, so every stitch meets our standards.</p>
+            </div>
+            <div class="feature">
+                <div class="feature__icon" aria-hidden="true">✂️</div>
+                <h3>Custom built</h3>
+                <p>Every bag is made to your specific requirements — size, layout and colour.</p>
+            </div>
+            <div class="feature">
+                <div class="feature__icon" aria-hidden="true">🏷️</div>
+                <h3>Honest pricing</h3>
+                <p>We've cut the middleman and the import costs, and passed the saving straight on.</p>
+            </div>
+            <div class="feature">
+                <div class="feature__icon" aria-hidden="true">🚚</div>
+                <h3>Nationwide delivery</h3>
+                <p>Delivery available anywhere in South Africa, straight to your door or club.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="section section--alt" id="about">
+    <div class="wrap about__grid">
+        <div class="about__media">
+            <img src="images/IMG_0119.JPG"
+                 alt="BowlzBagz canvas tote bowls bag">
+        </div>
+        <div class="about__body">
+            <span class="eyebrow">About us</span>
+            <h2>Quality gear without the premium price tag</h2>
+            <p>
+                At BowlzBagz we believe every player deserves high-quality gear without
+                having to pay a premium price. Based right here in South Africa, we've
+                cut out the middleman and the expensive import costs to bring you
+                durable, reliable bowls bags that are built to last.
+            </p>
+            <p>
+                Because we design and manufacture our products locally, we can offer
+                exceptional value and quality. That doesn't just save you money — it
+                supports local craftsmen and lets us make sure every stitch meets our
+                standards.
+            </p>
+            <p>
+                Whether you're a seasoned pro or just starting out, BowlzBagz has the
+                perfect bag for your needs. Our mission is simple: hardworking gear for
+                fellow South African bowlers, at an honest and affordable price.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+    <div class="wrap">
+        <div class="section-head">
+            <span class="eyebrow">Get in touch</span>
+            <h2>We'd love to hear from you</h2>
+            <p>Questions about sizing, colours or a custom build? Reach us on whichever channel suits you.</p>
+        </div>
+        <div class="contact-links">
+            <a href="mailto:bowlzbagz@gmail.com">📧 Email</a>
+            <a href="https://wa.me/+27842898784" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+            <a href="https://www.facebook.com/groups/963070630904845/user/61566341114636/" target="_blank" rel="noopener noreferrer">👍 Facebook</a>
+            <a href="https://www.instagram.com/bowlzbagz/" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+    <div class="wrap">
+        <h2>Ready to kit up?</h2>
+        <p>Browse the full range of bowls bags — from single-pair carriers to fully lined trolley bags.</p>
+        <a class="btn btn--primary" href="gallery.html">View the gallery</a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap site-footer__inner">
+        <span>&copy; BowlzBagz — Made in South Africa</span>
+        <span>
+            <a href="mailto:bowlzbagz@gmail.com">bowlzbagz@gmail.com</a>
+            &nbsp;·&nbsp;
+            <a href="https://wa.me/+27842898784" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </span>
+    </div>
+</footer>
+
 <script>
     const popup = document.getElementById('popup');
     const closeBtn = document.querySelector('.popup-close');
-    
-    // Show popup
+
     function showPopup() {
         popup.classList.remove('hidden');
     }
-    
-    // Close popup
+
     function closePopup() {
         popup.classList.add('hidden');
     }
-    
+
     closeBtn.addEventListener('click', closePopup);
-    
+
     // Close when clicking outside the box
     popup.addEventListener('click', (e) => {
         if (e.target === popup) {
             closePopup();
         }
     });
-    
-    // Show popup on page load (optional)
-    showPopup();
-</script> 
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closePopup();
+        }
+    });
+
+    // Promo pop-up disabled — uncomment the line below to switch it back on.
+    // showPopup();
+</script>
 
 </body>
 </html>
